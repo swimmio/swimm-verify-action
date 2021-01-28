@@ -17,5 +17,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - uses: actions/swimm-verify-action@v1
+      - uses: swimmio/swimm-verify-action@v1
 ```
