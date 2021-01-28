@@ -1,5 +1,6 @@
 name: Swimm Verify
 author: Swimm
+description: Verify your Swimm units are up-to-date
 runs:
   using: composite
   steps:
@@ -18,3 +19,7 @@ runs:
     - name: verify
       shell: bash
       run: node swimm_cli verify
+
+branding:
+  icon: 'check-square'  
+  color: 'blue'
