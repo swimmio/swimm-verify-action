@@ -14,8 +14,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # pulling the commits history is required for the verification to function properly
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - uses: swimmio/swimm-verify-action@v1
+      - uses: swimmio/swimm-verify-action@v1.2
 ```
