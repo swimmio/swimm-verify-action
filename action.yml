@@ -9,7 +9,7 @@ runs:
       run: git config user.name temp && git config user.email temp@swimm.io
     - name: download Swimm
       shell: bash
-      run: curl -s https://api.github.com/repos/swimmio/SwimmReleases/releases/latest | grep 'browser_download_url.*packed-swimm-linux-cli' | cut -d '"' -f 4 | wget -O swimm_cli -qi -
+      run: wget -q -O swimm_cli https://releases.swimm.io/ci/latest/packed-swimm-linux-cli
     - name: set execution permissions
       shell: bash
       run: chmod +x ./swimm_cli
