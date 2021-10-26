@@ -14,5 +14,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # pulling the commits history is required for the verification to function properly
-      - uses: swimmio/swimm-verify-action@v1.2
+      - uses: swimmio/swimm-verify-action@v1.3
 ```
