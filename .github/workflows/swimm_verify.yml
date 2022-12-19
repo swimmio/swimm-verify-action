@@ -1,0 +1,13 @@
+name: Swimm Verify
+
+on: pull_request
+
+jobs:
+  Verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+      - uses: swimmio/swimm-verify-action@v1.3
